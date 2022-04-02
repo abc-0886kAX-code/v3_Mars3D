@@ -2,7 +2,7 @@
  * @Author: zhangxin
  * @Date: 2022-03-23 16:36:14
  * @LastEditors: zhangxin
- * @LastEditTime: 2022-04-02 16:32:24
+ * @LastEditTime: 2022-04-02 16:52:17
  * @Description:
  */
 import * as mars3d from 'mars3d';
@@ -40,7 +40,7 @@ class GltfModel {
     protected setupModel() {
 
         // 根据模型 position 定位四面体的 position , 并且将四面体的高度与经纬度整合起来
-        if (this.options.tetrahedron) {
+        if (this.options.tetrahedron && this.options.tetrahedronHeight) {
             this.tetrahedronPosition = [...this.options.position.slice(0, 2), this.options.tetrahedronHeight]
         }
 
@@ -57,7 +57,7 @@ class GltfModel {
         })
 
         this.tetrahedronPrimitive = new mars3d.graphic.Tetrahedron({
-            position: this.tetrahedronPosition ? this.tetrahedronPosition : this.options.position,
+            position: this.options.tetrahedronHeight ? this.tetrahedronPosition : this.options.position,
             style: {
                 width: 25,
                 height: 40,
