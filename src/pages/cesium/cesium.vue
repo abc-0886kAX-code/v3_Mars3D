@@ -2,7 +2,7 @@
  * @Author: maggot-code
  * @Date: 2022-03-07 17:02:12
  * @LastEditors: zhangxin
- * @LastEditTime: 2022-03-28 17:12:40
+ * @LastEditTime: 2022-04-02 13:34:16
  * @Description: file content
 -->
 <script setup lang='ts'>
@@ -23,6 +23,7 @@ import { callbackParams, useTilesetModel } from '@/hooks/mars3d/use-tileset-mode
 import { onBeforeUnmount, ref } from 'vue';
 
 const selectLabel = ref('场景特效')
+
 
 const dropdownOptions = [
     {
@@ -65,15 +66,13 @@ const region = useGltfModel({
     clampToGround: true,
     attr: {
         label: {
-            title: '区域',
-            type: '类型',
-            material: ''
+            title: '',
+            type: '',
         },
         value: {
-            type: 'ModelEntity',
-            material: ''
+            type: '天安门',
         }
-    }
+    },
 })
 
 const feiji = useGltfModel({
@@ -90,7 +89,9 @@ const feiji = useGltfModel({
             type: 'ModelEntity',
             material: ''
         }
-    }
+    },
+    tetrahedron:true,
+    tetrahedronHeight:2200
 })
 
 
