@@ -4,8 +4,6 @@ components.d.ts
 dist
 dist-ssr
 lib
-public/Cesium
-public/Model
 
 # local env files
 .env.local

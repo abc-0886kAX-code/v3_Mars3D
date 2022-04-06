@@ -39,7 +39,7 @@
         "commitizen": "^4.2.4",
         "cross-env": "^7.0.3",
         "husky": "^7.0.4",
-        "mars3d": "^3.2.4",
+        "mars3d": "3.3.3",
         "postcss-viewport-height-correction": "^1.1.1",
         "rollup-plugin-external-globals": "^0.6.1",
         "rollup-plugin-visualizer": "^5.5.4",

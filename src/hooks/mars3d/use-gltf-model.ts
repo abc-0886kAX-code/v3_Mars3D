@@ -2,7 +2,7 @@
  * @Author: zhangxin
  * @Date: 2022-03-23 16:36:14
  * @LastEditors: zhangxin
- * @LastEditTime: 2022-04-02 16:52:17
+ * @LastEditTime: 2022-04-02 18:15:09
  * @Description:
  */
 import * as mars3d from 'mars3d';
